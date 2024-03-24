@@ -1,4 +1,4 @@
-public class BinarySearch {
+public class BinarySearchMistake {
 
     public static int binarySearch(int[] array, int target) {
         int min = 0;
@@ -10,8 +10,7 @@ public class BinarySearch {
             if (array[mid] == target) {
                 return mid;
             } else if (array[mid] < target) {
-                // Bug introduced here, updating min instead of max
-                min = mid + 1; // Incorrect line causing the issue
+                min = mid + 1; 
             } else {
                 max = mid - 1;
             }
